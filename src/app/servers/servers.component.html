@@ -1,0 +1,5 @@
+<hr>
+<input type="text" [(ngModel)]="serverName" class="form-control">
+<button class="btn btn-primary" (click)="onAddServer()">Add server</button>
+<h4 *ngIf="serverCreated">Server created with a name {{ serverName }}</h4>
+<app-server *ngFor="let server of servers"></app-server>
